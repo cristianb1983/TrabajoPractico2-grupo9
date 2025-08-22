@@ -14,5 +14,10 @@ package mainornitorrinco;
 */
 
 public interface Pata {
+    
+    double PICO = 6.8;
+    double PATAS = 7.5;
+
+    void tocarOrgano();
 
 }
