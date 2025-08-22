@@ -1,5 +1,6 @@
 package mainornitorrinco;
 
+import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -16,5 +17,23 @@ import java.util.Scanner;
 */
 
 public class Castor {
+    protected double cola;
+    protected double velocidad;
+    protected Random random = new Random();
+    Scanner leer = new Scanner(System.in);
+    
+    public Castor(double cola, double velocidad){
+        this.cola = cola;
+        this.velocidad = velocidad;
+    }
+    public void nadar(){
+        System.out.println("Velocidad de nado: " + velocidad + " km/hora");
+    }
 
+    public void tocarGuitarra(){
+        for(int x = 0; x < 3; x++){
+            int nroRandom = random.nextInt(6) + 1;
+            System.out.println("Toca cuerda " + nroRandom);
+        }
+    }    
 }
