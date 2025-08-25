@@ -23,9 +23,12 @@ public class Castor {
     protected String nombre;
     protected Random random = new Random();
     
-    public Castor(String nombre){
+    public Castor(String nombre, double cola, double velocidad) {
         this.nombre = nombre;
+        this.cola = cola;
+        this.velocidad = velocidad;
     }
+    
     public void nadar(){
         System.out.println("Velocidad de nado: " + velocidad + " km/hora");
     }

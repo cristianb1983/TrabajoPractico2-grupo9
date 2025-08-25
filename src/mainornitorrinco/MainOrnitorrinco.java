@@ -69,7 +69,7 @@ public class MainOrnitorrinco {
         
         System.out.println("--Ornitorrinco Verde:--");
 
-        OrniVerde orniVerde = new OrniVerde("Alfaro", cola, velocidad);
+        OrnitorrincoVerde orniVerde = new OrnitorrincoVerde("Alfaro", cola, velocidad);
         orniVerde.nadar();
         orniVerde.tocarGuitarorgan();
         

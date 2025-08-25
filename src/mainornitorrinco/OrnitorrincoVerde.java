@@ -16,12 +16,11 @@ import java.util.Scanner;
 */
 
 public class OrnitorrincoVerde extends Castor implements Pata {
-      private String nombre;    
-    Scanner leer = new Scanner(System.in);
-    
-    public OrniVerde(String nombre, double cola, double velocidad) {
-        super(cola, velocidad);
-        this.nombre=nombre;
+
+    private final Scanner leer = new Scanner(System.in);
+
+    public OrnitorrincoVerde(String nombre, double cola, double velocidad) {
+        super(nombre, cola, velocidad);
     }
     
     @Override
