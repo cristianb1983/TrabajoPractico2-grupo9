@@ -23,10 +23,8 @@ public class Castor {
     protected String nombre;
     protected Random random = new Random();
     
-    public Castor(String nombre, double cola, double velocidad) {
+    public Castor(String nombre) {
         this.nombre = nombre;
-        this.cola = cola;
-        this.velocidad = velocidad;
     }
     
     public void nadar(){
@@ -43,29 +41,31 @@ public class Castor {
     public void cargarDatos(Scanner leer){
         do{
             try{
-                System.out.println("Ingrese la longitud de la cola (entre 0-6.8 cm)");
+                System.out.println("Ingrese la longitud de la cola en (cm) de: "+nombre + ": ");
                 this.cola = leer.nextDouble();
-                if (this.cola > 6.8 || this.cola < 0){
-                    System.out.println("No puede ser mayor a 6.8 cm ni menor a 0 cm");
+                if (this.cola <= 0){
+                    System.out.println("La longitud de la cola debe ser mayor a 0cm");
                 }
             }catch (InputMismatchException e){
                 System.out.println("El tipo de dato ingresado no es el correcto");
+            } finally {
                 leer.nextLine();
             }
-        }while (this.cola > 6.8 || this.cola < 0);
+        }while (this.cola <= 0);
 
         do{
             try{
-                System.out.println("Ingrese la velocidad del castor (maximo 8 km/hora)");
+                System.out.println("Ingrese la velocidad (máximo 8km/hora) de: "+nombre +": ");
                 this.velocidad = leer.nextDouble();
-                if (this.velocidad > 8 || this.velocidad < 0) {
-                    System.out.println("No puede ser mayor a 8 ni menor a 0 km/hora");
+                if (this.velocidad > 8 || this.velocidad <= 0) {
+                    System.out.println("No puede ser mayor a 8km/h ni menor a 0.1 km/hora");
                 }
             }catch(InputMismatchException e){
                 System.out.println("El tipo de dato ingresado no es el correcto");
+            }finally{
                 leer.nextLine();
             }    
-        }while (this.velocidad > 8 || this.velocidad < 0);
+        }while (this.velocidad > 8 || this.velocidad <= 0);
 
     }
 

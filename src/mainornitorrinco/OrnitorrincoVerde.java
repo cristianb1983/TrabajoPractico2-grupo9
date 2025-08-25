@@ -19,19 +19,19 @@ public class OrnitorrincoVerde extends Castor implements Pata {
 
     private final Scanner leer = new Scanner(System.in);
 
-    public OrnitorrincoVerde(String nombre, double cola, double velocidad) {
-        super(nombre, cola, velocidad);
+    public OrnitorrincoVerde(String nombre) {
+        super(nombre);
     }
-    
+        
     @Override
     public void tocarOrgano() {
-        System.out.println("Do-Re-Mi");
-        System.out.println("Presione enter para continuar...");
+        System.out.println("Do-Re-Mi ");
+        System.out.print("(Presione enter para continuar...)");
         leer.nextLine();
         System.out.println("Fa-Sol-La-Si");
     }
 
-   public void tocarGuitarorgan(){
+   public void tocarGuitorgan(){
     super.tocarGuitarra();
     tocarOrgano();
        System.out.println("cuac, cuaac..!");
