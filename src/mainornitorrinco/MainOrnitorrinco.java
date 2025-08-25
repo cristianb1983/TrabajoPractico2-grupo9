@@ -19,6 +19,9 @@ import java.util.Scanner;
 */
 
 public class MainOrnitorrinco {
+
+      public static void main(String[] args){
+           
      Scanner sn = new Scanner(System.in);
 
         System.out.println("------CREANDO ORNITORRINCOS------");
@@ -125,13 +128,6 @@ public class MainOrnitorrinco {
             
         }
            
-         
-        
-        
-        
-    
-    
-    
 }
 
     
