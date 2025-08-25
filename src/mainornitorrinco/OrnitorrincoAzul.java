@@ -17,7 +17,7 @@ import java.util.Scanner;
 */
 public class OrnitorrincoAzul extends Castor {
 
-    private double propulsion; // 5 a 10 km/s (según consigna)
+    private double propulsion;
 
     public OrnitorrincoAzul(String nombre) {
         super(nombre);
